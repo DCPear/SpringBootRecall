@@ -23,3 +23,4 @@
     - Add JPA Hibernate Properties into application- properties file
        spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
     - Understand CRUD Operations of JPA Repository with example
+      public interface StaffRepository extends JpaRepository<Bean,primary key>

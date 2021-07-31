@@ -5,18 +5,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-@Table(name = "StaffDemo")
 @Entity
+@Table(name = "HrDetails")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Staff {
     @Column(name ="person_name")
     private String person_name;
+    @Id
     @Column(name ="id")
     private String id;
     @Column(name = "department")
